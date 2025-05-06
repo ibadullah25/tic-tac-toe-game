@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1e1e2f;
+    color: #f4f4f9;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 2rem;
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box {
+    background-color: #2e2e3e;
+    color: inherit;
+    border: none;
+    border-radius: 1rem;
+    font-size: 8vmin;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.1s ease, background-color 0.3s;
+    height: 18vmin;
+    width: 18vmin;
+}
+
+.box:hover {
+    background-color: #44475a;
+    transform: scale(1.03);
+}
+
+.box:disabled {
+    cursor: default;
+    opacity: 0.8;
+}
+
+.box:contains('O') {
+    color: #4ecdc4;
+}
+
+#newgame-btn {
+    background-color: #7d5fff;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#newgame-btn:hover {
+    background-color: #6c4fe2;
+}
+
+.msg-container {
+    margin-top: 1rem;
+}
+
+#winner-msg {
+    color: #ffe66d;
+    font-size: 2rem;
+}
+
+#draw-msg {
+    color: #c0c0c0;
+    font-size: 2rem;
+}
+
+.hide {
+    display: none;
+}
